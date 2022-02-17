@@ -1,8 +1,8 @@
 - name: deploy wordpress using a role
-  hosts: localhost
+  hosts: worker01
   become: true
   vars:
-    edit_hostname: "yes"
+    edit_hostname: "no"
     hostname: "ajc-worker"
   roles:
     - docker_role
